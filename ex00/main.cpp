@@ -6,7 +6,7 @@
 /*   By: rraumain <rraumain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 12:35:28 by rraumain          #+#    #+#             */
-/*   Updated: 2025/10/20 17:03:21 by rraumain         ###   ########.fr       */
+/*   Updated: 2025/10/21 15:10:51 by rraumain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int main(int ac, char* av[])
 {
 	if (ac != 2)
 	{
-		std::cout << "Error: could not open file." << std::endl;
+		std::cerr << "Error: could not open file." << std::endl;
 		return (1);
 	}
 
@@ -29,7 +29,7 @@ int main(int ac, char* av[])
 	}
 	catch(const std::exception& e)
 	{
-		std::cout << e.what() << '\n';
+		std::cerr << e.what() << '\n';
 		return (1);
 	}
 

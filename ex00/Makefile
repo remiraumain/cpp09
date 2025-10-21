@@ -6,13 +6,13 @@
 #    By: rraumain <rraumain@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/07 12:54:40 by rraumain          #+#    #+#              #
-#    Updated: 2025/10/20 17:08:03 by rraumain         ###   ########.fr        #
+#    Updated: 2025/10/21 15:11:09 by rraumain         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = btc
 CC = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++98 -g -O0
+CFLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRC = main.cpp BitcoinExchange.cpp
 

@@ -6,7 +6,7 @@
 /*   By: rraumain <rraumain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 17:47:19 by rraumain          #+#    #+#             */
-/*   Updated: 2025/10/21 14:44:57 by rraumain         ###   ########.fr       */
+/*   Updated: 2025/10/21 15:10:18 by rraumain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -274,7 +274,7 @@ void BitcoinExchange::exec(const std::string &path)
 			}
 			catch(const std::exception& e)
 			{
-				std::cout << "Error: " << e.what() << " => " << line << '\n';
+				std::cerr << "Error: " << e.what() << " => " << line << '\n';
 				continue;
 			}
 			print(date, value, rate);
