@@ -6,7 +6,7 @@
 /*   By: rraumain <rraumain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 19:49:20 by rraumain          #+#    #+#             */
-/*   Updated: 2025/10/22 10:56:50 by rraumain         ###   ########.fr       */
+/*   Updated: 2026/02/03 14:05:51 by rraumain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,8 @@ RPN::~RPN()
 
 int RPN::calc(const std::string &args)
 {
+	while (!_stack.empty())
+		_stack.pop();
 	std::istringstream iss(args);
 	std::string arg;
 	while (iss >> arg)
